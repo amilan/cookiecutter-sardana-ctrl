@@ -3,7 +3,7 @@
     "package_name": "controller",
     "project_description": "This is my new super cool sardana controller",
     "author_name": "kits",
-    "author_email": "kitscontrols@maxiv.lu.se"
-    "build_requires": ""
+    "author_email": "kitscontrols@maxiv.lu.se",
+    "build_requires": "",
     "dependencies": ""
 }
