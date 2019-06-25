@@ -41,7 +41,12 @@ def main():
     packages = find_packages()
 
     # Add your dependencies in the following line.
-    install_requires = ['sardana']
+    if {{dependencies}} == "":
+        install_requires = ['setuptools', 'sardana']
+        
+    # Add your build requires in the following line.
+    if {{build_requires}} == "":
+        requires == ['sphinx_rtd_theme', 'pytest', 'setuptools']
 
     setup(
         name=name,
@@ -52,6 +57,7 @@ def main():
         license=license,
         url=url,
         packages=packages,
+        requires=requires,
         install_requires=install_requires
     )
 
